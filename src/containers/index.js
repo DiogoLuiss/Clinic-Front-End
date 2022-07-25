@@ -1,0 +1,8 @@
+export { Home } from './Home'
+export * from './Login'
+export * from './Patients'
+export * from './RegisterPatient'
+export * from './Register'
+export * from './MakeConsultation'
+export * from './NotFound'
+export * from './EditConsultation'
