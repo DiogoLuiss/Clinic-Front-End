@@ -1,6 +1,6 @@
 <h1>Clinic-Front-End</h1>
 
-<img src="./src/assets/Clinic-Front-end.gif "  width="600px" alt="Project-Video">
+<img src="./src/assets/Clinic-Front-end.gif "   alt="Project-Video">
 
 
 <p>Clinic-video</p>
