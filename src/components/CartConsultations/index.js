@@ -40,7 +40,7 @@ function CartConsultations() {
 
   useEffect(() => {
     async function loadCars() {
-      const { data } = await api.get('consultation')
+      const { data } = await api.get('/consultation')
 
       setPatients(data)
     }
@@ -48,6 +48,7 @@ function CartConsultations() {
     loadCars()
   }, [])
 
+  console.log(Patients)
   const FindConsultations = Patients.filter(
     (patient) =>
       patient.date.startsWith(FilterConsultations) ||
@@ -57,33 +58,34 @@ function CartConsultations() {
 
   return (
     <Container>
-      {FindConsultations.map((Consultations) => (
-        <ContainerItens key={Consultations.id}>
-          <DivContent>
-            <DivIcons>
-              <button>
-                <FaTrash
-                  onClick={() => deleteConsultations(Consultations.id)}
-                  size={40}
-                ></FaTrash>
-              </button>
-              <button>
-                <FaPenSquare
-                  size={40}
-                  onClick={() => editConsultations(Consultations)}
-                ></FaPenSquare>
-              </button>
-            </DivIcons>
-            <DivInfoCar>
-              <P>Id do paciente: {Consultations.patient_id}</P>
-              <P>Data: {Consultations.date}</P>
-              <P>Horario: {Consultations.time}h</P>
-              <P>Paciente: {Consultations.patient.name}</P>
-              <P>Telefone: {Consultations.patient.tel}</P>
-            </DivInfoCar>
-          </DivContent>
-        </ContainerItens>
-      ))}
+      {FindConsultations &&
+        FindConsultations.map((Consultations) => (
+          <ContainerItens key={Consultations.id}>
+            <DivContent>
+              <DivIcons>
+                <button>
+                  <FaTrash
+                    onClick={() => deleteConsultations(Consultations.id)}
+                    size={40}
+                  ></FaTrash>
+                </button>
+                <button>
+                  <FaPenSquare
+                    size={40}
+                    onClick={() => editConsultations(Consultations)}
+                  ></FaPenSquare>
+                </button>
+              </DivIcons>
+              <DivInfoCar>
+                <P>Id do paciente: {Consultations.patient_id}</P>
+                <P>Data: {Consultations.date}</P>
+                <P>Horario: {Consultations.time}h</P>
+                <P>Paciente: {Consultations.patient.name}</P>
+                <P>Telefone: {Consultations.patient.tel}</P>
+              </DivInfoCar>
+            </DivContent>
+          </ContainerItens>
+        ))}
     </Container>
   )
 }

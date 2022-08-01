@@ -1,7 +1,9 @@
-<h1>Code-Burger-Shop-Front-End</h1>
+<h1>Clinic-Front-End</h1>
+
+<img src="./src/assets/Clinic-Front-end.gif "  width="600px" alt="Project-Video">
 
 
-<p>Clinic-Front-End</p>
+<p>Clinic-video</p>
 
 
 <h2>project's goal</h2> 
@@ -32,7 +34,22 @@ Make appointments for a clinic.
 
 <a href="https://www.youtube.com/watch?v=qFLhGq0060w" target="_blank"  ><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
 
+<h2>project features</h2> 
+
+<ul>
+
+<li>The application has Login and User Registration.</li>
+
+<li>Consultation hours must be from 08:00 to 17:00</li>
+
+<li>The date of the consultation cannot be less than today's date</li>
+
+</ul>
+
+<a href="https://www.youtube.com/watch?v=qFLhGq0060w" target="_blank"  ><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
+
 <h2>🤝 Collaborator </h2> 
+
 <table>
   <tr>
     <td align="center">
